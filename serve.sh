@@ -3,6 +3,15 @@ set -e
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 
+# Create and activate virtual environment if not already present
+if [ ! -d "$ROOT/venv" ]; then
+  echo "Creating virtual environment..."
+  python3 -m venv "$ROOT/venv"
+  "$ROOT/venv/bin/pip" install -r "$ROOT/backend/requirements.txt"
+fi
+
+source "$ROOT/venv/bin/activate"
+
 # Start FastAPI backend
 cd "$ROOT/backend"
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload &
