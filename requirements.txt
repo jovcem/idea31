@@ -1,0 +1,6 @@
+nicegui
+requests
+beautifulsoup4
+python-dotenv
+pywebview
+pyinstaller

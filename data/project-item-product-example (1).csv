@@ -1,0 +1,5 @@
+Product Code,Product Name,Product Page URL,Width,Depth,Height,Dimensions Unit,Product Family,Product Type,Product Version Type,Is Archtype,Product Class
+My Product code 1,My Product name 1,http://www.myproduct.com,100,40,40,Cm,Family 1,Production,ModelReview,,
+My Product code 2,My Product name 2,http://www.myproduct.com,50,20,20,In,Family 2,Production,ModelReview,false,
+My Product code 3,My Product name 3,http://www.myproduct.com,50,20,20,In,Family 2,SetupSelection,ModelReview,,
+My Product code 4,My Product name 4,http://www.myproduct.com,50,20,20,In,Family 2,Production,ModelReview,true,
