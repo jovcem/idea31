@@ -19,7 +19,7 @@ BACKEND_PID=$!
 
 # Start Vite dev server (proxies /api → FastAPI)
 cd "$ROOT/frontend"
-npm run dev &
+npm run dev -- --host &
 FRONTEND_PID=$!
 
 trap "kill $BACKEND_PID $FRONTEND_PID 2>/dev/null" EXIT INT TERM
